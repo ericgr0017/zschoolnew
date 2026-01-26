@@ -25,7 +25,7 @@ export default function CTASection({
           initial={shouldReduceMotion ? false : { opacity: 0, y: 16 }}
           whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="relative overflow-hidden rounded-[32px] border border-slate-200 bg-white p-10 text-center shadow-[0_30px_90px_rgba(15,23,42,0.08)] md:p-14"
         >
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(29,78,216,0.2),transparent_55%)]" />
