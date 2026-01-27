@@ -30,6 +30,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Zschool",
+    url: "https://zschool.com",
+    logo: "https://zschool.com/favicon.ico",
+    description:
+      "Human-governed, AI-powered education built with universities and advisory boards.",
+    email: "hello@zschool.com",
+    sameAs: ["https://github.com/ericgr0017/zschoolnew"],
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Zschool",
+    url: "https://zschool.com",
+  };
+
   return (
     <html lang="en">
       <body
@@ -37,6 +56,18 @@ export default function RootLayout({
       >
         <div className="flex min-h-screen flex-col">
           <Header />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(organizationSchema),
+            }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(websiteSchema),
+            }}
+          />
           <main className="flex-1">{children}</main>
           <Footer />
         </div>

@@ -70,6 +70,33 @@ const integrityStatements = [
   "Partnerships are governed by documented standards and outcomes.",
 ];
 
+const governanceArtifacts = [
+  "Governance charter outlining decision rights and review cadence.",
+  "Curriculum approval checklist signed by faculty reviewers.",
+  "Advisory board mandate with scope, membership, and responsibilities.",
+  "AI update validation protocol with evidence standards.",
+];
+
+const updateLog = [
+  {
+    date: "June 2026",
+    title: "Regulatory update review",
+    detail: "Aligned course content with new AI compliance guidance.",
+  },
+  {
+    date: "May 2026",
+    title: "Human review cycle completed",
+    detail: "Faculty reviewers approved syllabus updates across core modules.",
+  },
+  {
+    date: "April 2026",
+    title: "Advisory activation feedback",
+    detail: "Incorporated board input on real-world deployment case studies.",
+  },
+];
+
+const lastGovernanceReview = "June 2026";
+
 const outreachVerification = [
   {
     title: "Official email domains",
@@ -127,6 +154,19 @@ const faqs = [
 ];
 
 export default function TrustPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <div className="bg-white">
       <Hero
@@ -140,12 +180,71 @@ export default function TrustPage() {
         imageUrl={ASSETS.heroImage}
       />
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <FeatureGrid
         eyebrow="Trust pillars"
         heading="Clear governance, not assumptions."
         description="Our trust model is visible, documented, and reviewable."
         features={trustPillars}
       />
+
+      <section className="border-b border-slate-200">
+        <div className="mx-auto max-w-6xl px-6 py-16">
+          <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+            <div className="space-y-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-600">
+                Evidence
+              </p>
+              <h2 className="text-3xl font-semibold text-ink">
+                Governance artifacts you can review.
+              </h2>
+              <p className="text-sm leading-6 text-slate-600">
+                We maintain documented governance materials that explain who
+                approves updates, how decisions are made, and how accountability
+                is enforced.
+              </p>
+              <ul className="space-y-3 text-sm text-slate-600">
+                {governanceArtifacts.map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-slate-500" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+                Last governance review: {lastGovernanceReview}
+              </p>
+            </div>
+            <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+              <h3 className="text-lg font-semibold text-slate-900">
+                Sample update log
+              </h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                Illustrative entries from recent review cycles.
+              </p>
+              <div className="mt-5 space-y-4">
+                {updateLog.map((entry) => (
+                  <div key={entry.title} className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                      {entry.date}
+                    </p>
+                    <p className="mt-2 text-sm font-semibold text-slate-900">
+                      {entry.title}
+                    </p>
+                    <p className="mt-2 text-sm leading-6 text-slate-600">
+                      {entry.detail}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="border-b border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-6xl px-6 py-16">

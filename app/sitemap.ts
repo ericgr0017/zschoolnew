@@ -9,6 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/courses",
     "/technology",
     "/advisory-board",
+    "/governance",
+    "/updates",
     "/model",
     "/trust",
     "/for-universities",

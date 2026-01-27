@@ -17,6 +17,7 @@ const defaultNav: NavItem[] = [
   { label: "Courses", href: "/courses" },
   { label: "Technology", href: "/technology" },
   { label: "Trust", href: "/trust" },
+  { label: "Governance", href: "/governance" },
   { label: "For Universities", href: "/for-universities" },
 ];
 

@@ -6,6 +6,8 @@ const footerColumns = [
     links: [
       { label: "About", href: "/about" },
       { label: "Trust", href: "/trust" },
+      { label: "Governance", href: "/governance" },
+      { label: "Updates", href: "/updates" },
       { label: "Technology", href: "/technology" },
       { label: "How Zschool Works", href: "/model" },
     ],
