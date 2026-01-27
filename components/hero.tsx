@@ -34,11 +34,12 @@ export default function Hero({
   highlights,
 }: HeroProps) {
   const shouldReduceMotion = useReducedMotion();
+  const easeOutCurve: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
   const fadeUp = {
     initial: { opacity: 0, y: 18 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] },
+    transition: { duration: 0.7, ease: easeOutCurve },
   };
 
   if (variant === "centered") {
@@ -144,7 +145,7 @@ export default function Hero({
         <motion.div
           initial={shouldReduceMotion ? false : { opacity: 0, scale: 0.96 }}
           animate={shouldReduceMotion ? undefined : { opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.8, ease: easeOutCurve }}
           className="relative h-72 overflow-hidden rounded-[28px] border border-slate-200 bg-gradient-to-br from-brand-50 via-white to-brand-100 shadow-[0_30px_80px_rgba(15,23,42,0.12)]"
         >
           {videoUrl ? (
