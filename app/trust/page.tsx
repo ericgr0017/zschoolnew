@@ -249,7 +249,7 @@ export default function TrustPage() {
           <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
             <div className="space-y-4">
               <h2 className="text-3xl font-semibold text-slate-900">
-                How to verify Zschool.
+                How to verify ZAI Institute.
               </h2>
               <p className="text-sm leading-6 text-slate-600">
                 We encourage partners to review governance and documentation
@@ -276,7 +276,7 @@ export default function TrustPage() {
                 Academic rigor and human review.
               </h2>
               <p className="text-sm leading-6 text-slate-600">
-                Zschool treats academic rigor as a governance requirement, not a
+                ZAI Institute treats academic rigor as a governance requirement, not a
                 marketing claim. Faculty reviewers approve curriculum standards,
                 assessment criteria, and update decisions.
               </p>
