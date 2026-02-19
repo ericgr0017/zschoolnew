@@ -5,9 +5,9 @@ import FeatureGrid from "@/components/feature-grid";
 import Hero from "@/components/hero";
 
 export const metadata: Metadata = {
-  title: "Is Zschool legit?",
+  title: "Is ZAI Institute legit?",
   description:
-    "Transparent governance, advisory oversight, and human review explain how Zschool builds trustworthy AI education.",
+    "Transparent governance, advisory oversight, and human review explain how ZAI builds trustworthy AI education.",
 };
 const ASSETS = {
   heroImage: "public/hero-trust.png",
@@ -63,7 +63,7 @@ const aiReviewSteps = [
 ];
 
 const integrityStatements = [
-  "Zschool does not sell credentials or placement.",
+  "ZAI does not sell credentials or placement.",
   "We do not operate a pay-to-play marketplace.",
   "Partnerships are governed by documented standards and outcomes.",
 ];
@@ -99,7 +99,7 @@ const outreachVerification = [
   {
     title: "Official email domains",
     description:
-      "Legitimate outreach comes from @zschool.com addresses (for example: hello@zschool.com).",
+      "Legitimate outreach comes from @zaiinstitute.com addresses (for example: hello@zaiinstitute.com).",
   },
   {
     title: "What we never ask for",
@@ -115,9 +115,9 @@ const outreachVerification = [
 
 const faqs = [
   {
-    question: "How is Zschool different from a typical online course provider?",
+    question: "How is ZAI Institute different from a typical online course provider?",
     answer:
-      "Zschool is governed by humans and activated inside organizations. We combine academic oversight, advisory input, and AI-driven updates, then tie learning to real initiatives rather than self-serve consumption.",
+      "ZAI is governed by humans and activated inside organizations. We combine academic oversight, advisory input, and AI-driven updates, then tie learning to real initiatives rather than self-serve consumption.",
   },
   {
     question: "Who decides what content is included?",
@@ -140,7 +140,7 @@ const faqs = [
       "Yes. We provide governance documentation, advisory board structures, and change logs during partnership discussions.",
   },
   {
-    question: "Is Zschool a pay-to-play model?",
+    question: "Is ZAI Institute a pay-to-play model?",
     answer:
       "No. We do not sell credentials or placement. Programs are governed by academic standards and structured partnership agreements.",
   },
@@ -170,8 +170,8 @@ export default function TrustPage() {
       <Hero
         variant="split"
         eyebrow="Trust & Legitimacy"
-        title="Is Zschool legit?"
-        description="Zschool is built for credibility. Academic rigor, human governance, and advisory boards are explicit and reviewable. AI keeps content current, but humans validate every change."
+        title="Is ZAI Institute legit?"
+        description="ZAI is built for credibility. Academic rigor, human governance, and advisory boards are explicit and reviewable. AI keeps content current, but humans validate every change."
         primaryCta={{ label: "Schedule a Conversation", href: "/contact" }}
         secondaryCta={{ label: "See the governance model", href: "/model" }}
         imageLabel="Faculty review session"
