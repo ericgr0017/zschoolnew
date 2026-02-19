@@ -9,10 +9,9 @@ export const metadata: Metadata = {
   description:
     "Transparent governance, advisory oversight, and human review explain how Zschool builds trustworthy AI education.",
 };
-
 const ASSETS = {
-  heroImage:
-    "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1600&q=80",
+  heroImage: "/hero-trust.png",
+};
 };
 
 const trustPillars = [
