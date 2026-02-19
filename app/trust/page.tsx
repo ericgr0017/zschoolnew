@@ -12,7 +12,6 @@ export const metadata: Metadata = {
 const ASSETS = {
   heroImage: "/hero-trust.png",
 };
-};
 
 const trustPillars = [
   {
