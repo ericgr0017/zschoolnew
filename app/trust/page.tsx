@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "Transparent governance, advisory oversight, and human review explain how ZAI builds trustworthy AI education.",
 };
 const ASSETS = {
-  heroImage: "public/hero-trust.png",
+  heroImage: "https://zschoolnew-i69a.vercel.app/hero-trust.png",
 };
 
 const trustPillars = [
