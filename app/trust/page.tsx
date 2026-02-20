@@ -405,8 +405,7 @@ export default function TrustPage() {
       {trustTestimonials.map((t) => (
         <figure
           key={`${t.name}-${t.institution}`}
-          className="rounded-2xl border border-slate-200 bg-white p-6"
-        >
+          className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-6"        >
           <div className="flex items-center gap-4">
             <div className="h-12 w-12 overflow-hidden rounded-full border border-slate-200 bg-slate-100">
               {/* Using plain <img> keeps this simple. If the repo already uses next/image,
