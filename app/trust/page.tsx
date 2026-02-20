@@ -416,14 +416,13 @@ export default function TrustPage() {
                 alt={`${t.name}, ${t.title}`}
                 className="h-full w-full object-cover"
               />
-            </div>
-            <div className="min-w-0">
-              <figcaption className="text-sm font-semibold text-slate-900 truncate">
-                {t.name}
-              </figcaption>
-              <p className="text-xs text-slate-600 truncate">
-                {t.title} • {t.institution}
-              </p>
+            <div className="min-w-0 flex-1">
+  <figcaption className="text-sm font-semibold text-slate-900 leading-tight break-words">
+    {t.name}
+  </figcaption>
+  <p className="mt-0.5 text-xs text-slate-600 leading-snug break-words whitespace-normal">
+    {t.title} • {t.institution}
+  </p>
             </div>
           </div>
 
