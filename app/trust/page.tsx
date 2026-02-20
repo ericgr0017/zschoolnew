@@ -393,7 +393,7 @@ export default function TrustPage() {
         Testimonials
       </p>
       <h2 className="text-3xl font-semibold text-slate-900">
-        What partners look for — and what they confirm.
+        What our partners say
       </h2>
       <p className="text-sm leading-6 text-slate-600">
         These are examples of the kinds of trust signals institutional stakeholders
@@ -401,7 +401,6 @@ export default function TrustPage() {
       </p>
     </div>
 
-   <p className="text-red-600 font-bold">TESTIMONIALS SECTION HERE</p>
     <div className="mt-10 grid gap-6 md:grid-cols-3">
       {trustTestimonials.map((t) => (
         <figure
