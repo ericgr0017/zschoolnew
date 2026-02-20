@@ -301,19 +301,19 @@ export default function TrustPage() {
     <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-600">
       Video Testimonial
     </p>
+
     <h2 className="mt-3 text-3xl font-semibold text-slate-900">
       Hear directly from one of our clients
     </h2>
-  <div className="mt-8 overflow-hidden rounded-3xl border border-slate-200 bg-black">
-      <video
-        controls
-        playsInline
-        preload="metadata"
-        className="w-full"
-      >
-        <source src="/videos/brendan-percossi.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+
+    <div className="mt-8 aspect-video overflow-hidden rounded-3xl border border-slate-200">
+      <iframe
+        className="h-full w-full"
+        src="https://www.youtube.com/embed/_4e-owQod6U"
+        title="Client testimonial"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
     </div>
   </div>
 </section>
