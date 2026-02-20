@@ -109,7 +109,34 @@ const outreachVerification = [
   {
     title: "How to confirm an invite",
     description:
-      "Forward the message to hello@zschool.com and we will confirm the sender and context.",
+      "Forward the message to hello@zaiinstitute.com and we will confirm the sender and context.",
+  },
+];
+
+const trustTestimonials = [
+  {
+    quote:
+      "ZAI Institute’s governance model made it easy to confirm decision rights and academic accountability.",
+    name: "Full Name (Placeholder)",
+    title: "Role / Title",
+    institution: "Institution / Organization",
+    imageUrl: "/testimonials/placeholder-1.jpg",
+  },
+  {
+    quote:
+      "The review checkpoints and change-log approach removed the usual ‘black box’ concern.",
+    name: "Full Name (Placeholder)",
+    title: "Role / Title",
+    institution: "Institution / Organization",
+    imageUrl: "/testimonials/placeholder-2.jpg",
+  },
+  {
+    quote:
+      "The advisory structure is clear, documented, and aligned to real institutional priorities.",
+    name: "Full Name (Placeholder)",
+    title: "Role / Title",
+    institution: "Institution / Organization",
+    imageUrl: "/testimonials/placeholder-3.jpg",
   },
 ];
 
@@ -359,6 +386,56 @@ export default function TrustPage() {
         features={outreachVerification}
       />
 
+      <section className="border-t border-slate-200 bg-slate-50">
+  <div className="mx-auto max-w-6xl px-6 py-16">
+    <div className="space-y-4">
+      <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-600">
+        Testimonials
+      </p>
+      <h2 className="text-3xl font-semibold text-slate-900">
+        What partners look for — and what they confirm.
+      </h2>
+      <p className="text-sm leading-6 text-slate-600">
+        These are examples of the kinds of trust signals institutional stakeholders
+        typically want before moving forward.
+      </p>
+    </div>
+
+    <div className="mt-10 grid gap-6 md:grid-cols-3">
+      {trustTestimonials.map((t) => (
+        <figure
+          key={`${t.name}-${t.institution}`}
+          className="rounded-2xl border border-slate-200 bg-white p-6"
+        >
+          <div className="flex items-center gap-4">
+            <div className="h-12 w-12 overflow-hidden rounded-full border border-slate-200 bg-slate-100">
+              {/* Using plain <img> keeps this simple. If the repo already uses next/image,
+                  you can swap this for <Image ... /> */}
+              <img
+                src={t.imageUrl}
+                alt={`${t.name}, ${t.title}`}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div className="min-w-0">
+              <figcaption className="text-sm font-semibold text-slate-900 truncate">
+                {t.name}
+              </figcaption>
+              <p className="text-xs text-slate-600 truncate">
+                {t.title} • {t.institution}
+              </p>
+            </div>
+          </div>
+
+          <blockquote className="mt-5 text-sm leading-6 text-slate-700">
+            “{t.quote}”
+          </blockquote>
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>
+      
       <section>
         <div className="mx-auto max-w-6xl px-6 py-16">
           <div className="space-y-8">
