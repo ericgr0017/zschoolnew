@@ -310,7 +310,7 @@ export default function TrustPage() {
                   Not pay-to-play
                 </h3>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
-                  Zschool is not a pay-to-play model. We do not sell
+                  ZAI Institute is not a pay-to-play model. We do not sell
                   credentials, access, or placement. Partnerships are governed
                   by documented standards and outcomes.
                 </p>
@@ -366,7 +366,7 @@ export default function TrustPage() {
               <h2 className="text-3xl font-semibold text-slate-900">FAQ</h2>
               <p className="mt-3 text-sm leading-6 text-slate-600">
                 Common questions from universities, organizations, and
-                executives evaluating Zschool.
+                executives evaluating ZAI Institute.
               </p>
             </div>
             <div className="grid gap-6 md:grid-cols-2">
@@ -390,7 +390,7 @@ export default function TrustPage() {
       <CTASection
         title="Want to review documentation?"
         description="We can share governance documentation and references during a short call."
-        secondaryLabel="How Zschool Works"
+        secondaryLabel="How ZAI Institute Works"
         secondaryHref="/model"
       />
     </div>
