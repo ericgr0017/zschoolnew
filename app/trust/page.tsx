@@ -401,6 +401,7 @@ export default function TrustPage() {
       </p>
     </div>
 
+   <p className="text-red-600 font-bold">TESTIMONIALS SECTION HERE</p>
     <div className="mt-10 grid gap-6 md:grid-cols-3">
       {trustTestimonials.map((t) => (
         <figure
