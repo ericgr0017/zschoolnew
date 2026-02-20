@@ -309,7 +309,7 @@ export default function TrustPage() {
         className="w-full"
         preload="metadata"
       >
-        <source src="/videos/brendan-percossi.mp4" type="video/mp4" />
+        <source src="public/videos/brendan-percossi.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
