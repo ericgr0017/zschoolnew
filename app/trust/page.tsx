@@ -127,7 +127,7 @@ const trustTestimonials = [
       "It has really helped me think about many issues in a new way, and I've been exposed to important trends that are relevant to my organization and what I need to know to lead it",
     name: "Dean Ridings",
     title: "CEO",
-    institution: "Institution / Organization",
+    institution: "America's Newspapers",
     imageUrl: "/testimonials/placeholder-2.jpg",
   },
   {
