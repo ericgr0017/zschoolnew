@@ -295,7 +295,8 @@ export default function TrustPage() {
         </div>
       </section>
 
-     <section className="border-b border-slate-200 bg-white">
+     
+      <section className="border-b border-slate-200 bg-white">
   <div className="mx-auto max-w-6xl px-6 py-16">
     <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-600">
       Video Testimonial
@@ -303,13 +304,14 @@ export default function TrustPage() {
     <h2 className="mt-3 text-3xl font-semibold text-slate-900">
       Hear directly from one of our clients
     </h2>
-    <div className="mt-8 overflow-hidden rounded-3xl border border-slate-200 bg-black">
+  <div className="mt-8 overflow-hidden rounded-3xl border border-slate-200 bg-black">
       <video
         controls
-        className="w-full"
+        playsInline
         preload="metadata"
+        className="w-full"
       >
-        <source src="/public/videos/brendan-percossi.mp4" type="video/mp4" />
+        <source src="/videos/brendan-percossi.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
