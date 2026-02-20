@@ -405,23 +405,26 @@ export default function TrustPage() {
       {trustTestimonials.map((t) => (
         <figure
           key={`${t.name}-${t.institution}`}
-          className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-6"        >
-          <div className="flex items-center gap-4">
-            <div className="h-12 w-12 overflow-hidden rounded-full border border-slate-200 bg-slate-100">
-              {/* Using plain <img> keeps this simple. If the repo already uses next/image,
-                  you can swap this for <Image ... /> */}
+          className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-6"
+        >
+          <div className="flex items-start gap-4">
+            {/* Avatar */}
+            <div className="h-12 w-12 shrink-0 overflow-hidden rounded-full border border-slate-200 bg-slate-100">
               <img
                 src={t.imageUrl}
                 alt={`${t.name}, ${t.title}`}
                 className="h-full w-full object-cover"
               />
+            </div>
+
+            {/* Name + title */}
             <div className="min-w-0 flex-1">
-  <figcaption className="text-sm font-semibold text-slate-900 leading-tight break-words">
-    {t.name}
-  </figcaption>
-  <p className="mt-0.5 text-xs text-slate-600 leading-snug break-words whitespace-normal">
-    {t.title} • {t.institution}
-  </p>
+              <figcaption className="text-sm font-semibold text-slate-900 leading-tight break-words">
+                {t.name}
+              </figcaption>
+              <p className="mt-0.5 text-xs text-slate-600 leading-snug break-words whitespace-normal">
+                {t.title} • {t.institution}
+              </p>
             </div>
           </div>
 
