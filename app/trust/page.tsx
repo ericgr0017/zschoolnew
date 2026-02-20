@@ -116,26 +116,26 @@ const outreachVerification = [
 const trustTestimonials = [
   {
     quote:
-      "ZAI Institute’s governance model made it easy to confirm decision rights and academic accountability.",
-    name: "Full Name (Placeholder)",
-    title: "Role / Title",
-    institution: "Institution / Organization",
+      "A lot of the concepts are so relevant to my role and I can work on applying them. This ability to apply what I was learning throughout the course has been great. It has been an eye opening experience. My brain is buzzing with ideas.",
+    name: "Vikram Ekambaram",
+    title: "Director, Global Customer Advocacy",
+    institution: "Tableau/Salesforce",
     imageUrl: "/testimonials/placeholder-1.jpg",
   },
   {
     quote:
-      "The review checkpoints and change-log approach removed the usual ‘black box’ concern.",
-    name: "Full Name (Placeholder)",
-    title: "Role / Title",
+      "It has really helped me think about many issues in a new way, and I've been exposed to important trends that are relevant to my organization and what I need to know to lead it",
+    name: "Dean Ridings",
+    title: "CEO",
     institution: "Institution / Organization",
     imageUrl: "/testimonials/placeholder-2.jpg",
   },
   {
     quote:
-      "The advisory structure is clear, documented, and aligned to real institutional priorities.",
-    name: "Full Name (Placeholder)",
-    title: "Role / Title",
-    institution: "Institution / Organization",
+      "I continue to marvel at the use of different media in this course. Movies, podcasts, articles, videos, and books. All with relevant and interesting content. I like that module after module has recurring themes which help to reinforce the learning.",
+    name: "Trisha Yamato",
+    title: "Senior Manager, Human Resources",
+    institution: "Los Angeles LGBT Center",
     imageUrl: "/testimonials/placeholder-3.jpg",
   },
 ];
